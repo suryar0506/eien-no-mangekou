@@ -1,0 +1,55 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+<h3 style = "font-size: large; color:rgb(250, 3, 250)" class = "btn btn-default heading">Image Recognition</h3>
+      <br>
+      <br>
+      <p style="font-size: 22px; color:rgb(255, 0, 0)">Model is trained to identify the following objects: </p>
+    <b id = "names_of_objects">
+  Phone
+  <hr>
+  Watch
+  <hr>
+  Waterbottle
+  <hr>
+  Spoon
+  <hr>
+     </b>
+      <strong><label id = "webcam_label" style = "font-size: 20px; color:crimson">Webcam View -  </label></strong>
+     <br><br>
+      <div id = "webcam"></div>
+      <br><br>
+<div id = "snapshot"></div>
+      <br><br>
+<button class = "btn btn-success" id = "take_photo" onclick = "takeSnapshot()"> Take the photo</button>
+      <br><br>
+<button class = "btn btn-primary" id = "save_photo" onclick = "saveSnapshot()"> Save the photo</button>
+      <br><br>
+
+      <p style="font-size: 22px; color:red;">Object :<span id = "object"></span>  </p>
+      <p style="font-size: 22px; color: red;">Accuracy :<span id = "object"></span>  </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
